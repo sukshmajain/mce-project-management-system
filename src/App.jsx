@@ -1,7 +1,7 @@
-import CreateTeam from "./pages/CreateTeam";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return <CreateTeam />;
+  return <AppRoutes />;
 }
 
 export default App;

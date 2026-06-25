@@ -1,18 +1,16 @@
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
-import TeamForm from "../components/TeamForm";
 
-function CreateTeam() {
+function DashboardLayout({ children }) {
   return (
     <div className="flex">
       <Sidebar />
-
-      <main className="flex-1 ml-[260px]">
+      <div className="flex-1 ml-[260px]">
         <Topbar />
-        <TeamForm />
-      </main>
+        {children}
+      </div>
     </div>
   );
 }
 
-export default CreateTeam;
+export default DashboardLayout;
